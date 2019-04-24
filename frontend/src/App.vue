@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>
     </div>
     <div>{{a}}</div>
@@ -11,23 +11,23 @@
 
 <script>
 export default {
-  data: function(){
+  data: function() {
     return {
       a: 1
-    }
+    };
   },
   mounted() {
-    this.a = "mounted完成"
-    this.axios.get('/users').catch(()=>{
-      this.a = '请求服务器失败'
-    })
+    // this.a = "mounted完成"
+    // this.axios.get('/users').catch(()=>{
+    //   this.a = '请求服务器失败'
+    // })
   }
-}
+};
 </script>
 
 <style lang="less">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
